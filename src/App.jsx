@@ -29,7 +29,6 @@ function App() {
     created: 'Criação: 29-12-2017'
 
   }
-
   const item4 = {
     name: 'Jerry Smith',
     image: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg',
@@ -40,14 +39,23 @@ function App() {
 
   }
 
+  const itens = [item1, item2, item3, item4]
+
   return (
     <>
-    <div className='cards'> 
-      <Card item={item1} />
-      <Card item={item2} />
-      <Card item={item3} />
-      <Card item={item4} />
-    </div>
+
+      <div className='tittle'>
+        <h1>Brincando com "The Rick and Morty API"</h1>
+      </div>
+
+      <div className='cards'>
+
+        {/* <Card item={item1} />
+            <Card item={item2} />
+            <Card item={item3} />
+            <Card item={item4} /> */}
+        {itens.map(item => <Card item={item} />)}
+      </div>
     </>
   )
 }

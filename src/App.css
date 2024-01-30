@@ -19,6 +19,11 @@
   cursor: pointer;
 }
 
+.tittle {
+  text-align: center;
+  font-size: 18px;
+}
+
 .card > h2 {
   font-size: 32px;
   border-left: 6px solid #44a354;
