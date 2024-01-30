@@ -14,7 +14,6 @@ function Card(props) {
           <div className="tag">{item.status}</div>
           <div className="tag">{item.species}</div>
           <div className="tag">{item.origin}</div>
-          <div className="tag">{item.created}</div>
         </div>
 
         <img src={item.image} />

@@ -22,6 +22,12 @@
 .tittle {
   text-align: center;
   font-size: 18px;
+  background: #44a354;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 12px;
 }
 
 .card > h2 {
@@ -34,7 +40,7 @@
 }
 
 .tag {
-  background: black;
+  background: #44a354;
   color: white;
   font-size: 12px;
   font-weight: bold;

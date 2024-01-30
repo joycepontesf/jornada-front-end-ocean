@@ -3,40 +3,32 @@ import Card from './components/Card/Card'
 
 function App() {
   const item1 = {
-    name: 'Morty Smith',
+    name: 'Donna Gueterman',
     image: 'https://rickandmortyapi.com/api/character/avatar/232.jpeg',
-    status: 'Status: Vivo',
-    species: 'Espécie: Humana',
-    origin: 'Origem: Terra',
-    created: 'Criação: 30-12-2017'
-
+    status: 'Status: Morta',
+    species: 'Espécie: Robô',
+    origin: 'Origem: Planeta Squanch'
   }
   const item2 = {
     name: 'Rick Sanchez',
     image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
     status: 'Status: Vivo',
     species: 'Espécie: Humana',
-    origin: 'Origem: Terra (C-137)',
-    created: 'Criação: 04-11-2017'
-
+    origin: 'Origem: Planeta Terra (C-137)'
   }
   const item3 = {
     name: 'Johnny Depp',
     image: 'https://rickandmortyapi.com/api/character/avatar/183.jpeg',
     status: 'Status: Vivo',
     species: 'Espécie: Humana',
-    origin: 'Origem: Terra (C-500A)',
-    created: 'Criação: 29-12-2017'
-
+    origin: 'Origem: Planeta Terra (C-500A)'
   }
   const item4 = {
     name: 'Jerry Smith',
     image: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg',
     status: 'Status: Vivo',
     species: 'Espécie: Humana',
-    origin: 'Origem: Terra',
-    created: 'Criação: 04-11-2017'
-
+    origin: 'Origem: Planeta Terra'
   }
 
   const itens = [item1, item2, item3, item4]
