@@ -4,7 +4,7 @@ import Card from './components/Card/Card'
 function App() {
   const item1 = {
     name: 'Donna Gueterman',
-    image: 'https://rickandmortyapi.com/api/character/avatar/232.jpeg',
+    image: 'https://rickandmortyapi.com/api/character/avatar/102.jpeg',
     status: 'Status: Morta',
     species: 'Espécie: Robô',
     origin: 'Origem: Planeta Squanch'
