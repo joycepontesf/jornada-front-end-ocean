@@ -2,6 +2,7 @@ import './App.css'
 import Card from './components/Card/Card'
 
 function App() {
+  // Carregamento de dados direto via código
   const item1 = {
     name: 'Donna Gueterman',
     image: 'https://rickandmortyapi.com/api/character/avatar/102.jpeg',
@@ -33,6 +34,30 @@ function App() {
 
   const itens = [item1, item2, item3, item4]
 
+  // Carregamento de dados via API (backend)
+  async function carregarDadpsApi(){
+    const apiUrl = 'https://rickandmortyapi.com/api/character/'
+
+    // Preparar a requisição
+    const response = await fetch(apiUrl)
+
+    //console.log(response)
+
+    const body = await response.json()
+
+    console.log(body)
+
+    // Extrair a propriedade results do body
+    // Essa propriedade contém a lista de itens
+    const results = body.results;
+
+    //TODO: Desafio para volta do intervalo:
+    // Enviar os results para JSX, exibindo um card para cada item da API
+
+  }
+
+  carregarDadpsApi()
+
   return (
     <>
 
@@ -41,12 +66,7 @@ function App() {
       </div>
 
       <div className='cards'>
-
-        {/* <Card item={item1} />
-            <Card item={item2} />
-            <Card item={item3} />
-            <Card item={item4} /> */}
-        {itens.map((item, i) => <Card item={item} key={i}/>)}
+        {itens.map((item, i) => <Card item={item} key={i} />)}
       </div>
     </>
   )
