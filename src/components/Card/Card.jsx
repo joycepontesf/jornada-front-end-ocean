@@ -13,7 +13,7 @@ function Card(props) {
         <div className="tags">
           <div className="tag">{item.status}</div>
           <div className="tag">{item.species}</div>
-          <div className="tag">{item.origin}</div>
+          <div className="tag">{item.origin.name}</div>
         </div>
 
         <img src={item.image} />
