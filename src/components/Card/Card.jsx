@@ -9,13 +9,13 @@ function Card(props) {
     <>
       <div className='card'>
         <h2>{item.name}</h2>
-
+      <div>
         <div className="tags">
           <div className="tag">{item.status}</div>
           <div className="tag">{item.species}</div>
           <div className="tag">{item.origin.name}</div>
         </div>
-
+      </div>
         <img src={item.image} />
       </div>
     </>
